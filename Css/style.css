@@ -1,0 +1,314 @@
+ *{
+     padding: 0;
+     margin: 0;
+ }
+ body{
+     font-family: sans-serif;
+ }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1365px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    height: 10vh;
+}
+ .log{
+     display: flex;
+     font-size: 2rem;
+     text-align: center;
+ }
+ .log i{
+     color: #6e0aef;
+     padding: 5px 12px;
+ }
+
+ nav .fa-solid {
+     display: none;
+ }
+
+  .log h4{
+    font-family: cursive;
+  }
+
+  nav .nav_itemes{
+      display: flex;
+      list-style-type: none;
+  }
+   nav .nav_itemes .item{
+       padding: 0 16px;
+   }
+   nav .nav_itemes .item .link{
+       text-decoration: none;
+       color: #4e547e;
+       font-size: 1.4rem;
+   }
+   nav .nav_itemes .item .link:hover{
+       color: #6e0aef;
+   }
+
+
+   .first_section{
+       background-color: #f8f7fc;
+       max-width: 1365px;
+       height: 90vh;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 0 auto;
+       padding: 0 5rem;
+   }
+   .content_text{
+       display: block;
+   }
+   .content_text h4{
+       color: #6e0aef;
+       font-size: 1.6rem;
+       margin-bottom: 16px;
+   }
+   .content_text h1{
+       font-size: 2.6rem;
+       margin-bottom: 1rem;
+   }
+   .content_text p{
+       color: rgb(29,29,29 );
+       font-size: 1.4rem;
+   }
+   .content_text p span{
+       color: #6e0aef;
+   }
+
+    .btn{
+       width: 160px;
+       margin-top: 50px;
+       border-radius: 8px;
+       border: none;
+       padding: 12px 25px;
+       background-color: #6e0aef;
+   }
+   .btn:hover{
+       background-color: #7d25f0;
+       cursor: pointer;
+   }
+   .btn a{
+       text-decoration: none;
+       color: #ffff;
+       font-size: 1.5rem;
+   }
+
+   .second_section{
+    background-color: #f8f7fc;
+    max-width: 1365px;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+  
+}
+.second_section h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+}
+.second_section .dives{
+    display: flex;
+    justify-content: space-between;
+
+}
+ .second_section .div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #ffffff;
+     padding: 32px;
+     max-width: 17rem;
+     border-radius: 1rem;
+     margin: 16px;
+ }
+ .second_section .dives .div:hover{
+     border: 2px solid #6e0aef;
+ }
+
+.div i{
+    font-size: 32px;
+    color: #6e0aef;
+    margin-bottom: 16px;
+}
+.div h4{
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+.div p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4e547e;
+}
+
+.third_section{
+    padding-top: 5rem;
+    max-width: 1365px;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+   
+}
+.third_section h4{
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+}
+.third_section .about_phones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+}
+.about_phones .phone{
+    margin: 32px 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phone img{
+    margin-bottom: 16px;
+}
+.phone img:hover{
+    transform: scale(1.1);
+}
+.phone h3{
+    font-size: 1.6rem;
+}
+.third_section button{
+    width: 15rem;
+    margin-bottom: 16px;
+    align-self: center;
+}
+footer{
+    background-color: #f8f7fc;
+    height: 15vh;
+    margin-top: 5rem;
+    padding: 2rem 0;
+}
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1365px;
+    margin: 0 auto;
+    padding: 0 5rem;
+
+}
+.footer_section p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.footer_section .socials{
+    margin-bottom: 1rem;
+}
+.footer_section .socials i{
+    padding: 0 0.5rem;
+    font-size: 1.6rem;
+}
+.footer_section .socials i:hover{
+    color: #6e0aef;
+    cursor: pointer;
+}
+@media(max-width:1300px){
+    *{
+        font-size: 85%;
+    }
+}
+
+@media(max-width:1170px){
+    *{
+        font-size: 80%;
+    }
+}
+@media(max-width:1000px){
+    *{
+      text-align: center;
+    }
+    .first_section img{
+        display: none;
+    }
+    .first_section{
+        align-items: center;
+        padding: 2rem 0;
+        width: 50%;
+    }
+    .content_text .btn{
+        align-self: center;
+    }
+    .second_section .dives{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .second_section{
+        align-items: center;
+    }
+    .first_section{
+        height: 70vh;
+    }
+}
+
+@media(max-width:1000px){
+    .first_section .content_text h1{
+        font-size: 2rem;
+    }
+    .third_section{
+        align-items: center;
+    }
+    .third_section .about_phones{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:500px){
+    .third_section .about_phones{
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 3rem;
+    }
+    nav .nav_itemes{
+        position: absolute;
+        left: 0;
+        top: 10vh;
+        width: 100%;
+        background-color: #6e0aef;
+        padding: 2rem 0;
+        display: none;
+    }
+    .nav_itemes .active{
+        display: flex;
+    }
+    .nav_itemes{
+        margin: 1rem 0;
+    }
+    .nav_itemes a{
+        color: #ffff;
+    }
+
+}
+
+
+
+
+
+
+
+
+
